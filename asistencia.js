@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    // Mostrar perfil en central y cabecera (menu.js ya lo hace, pero aseguramos que funcione)
+    // Mostrar perfil en central y cabecera
     const nombreCompleto = data.nombre + " " + data.apellido;
 
     const studentNameMain = document.getElementById("student-name-main");
@@ -19,97 +19,65 @@ document.addEventListener("DOMContentLoaded", () => {
     const courseNameMain = document.getElementById("course-name-main");
     if (courseNameMain) courseNameMain.textContent = data.curso;
 
-    // Cargar notas
-    cargarNotas(data);
+    // Mostrar datos en dropdown
+    const nombreCompletoDropdown = document.getElementById("nombreCompleto");
+    if (nombreCompletoDropdown) nombreCompletoDropdown.textContent = nombreCompleto;
+
+    const courseNameDropdown = document.getElementById("course-name");
+    if (courseNameDropdown) courseNameDropdown.textContent = data.curso;
+
+    // Cargar asistencia
+    cargarAsistencia(data);
 });
 
 // ===============================
-// BASE DE DATOS (SOLO ASISTENCIA POR CI)
+// BASE DE DATOS CON ASISTENCIA (manual)
 // ===============================
 const estudiantesAsistencia = {
     "1234567": {
         asistencia: [
-            { trimestre: "1er Trimestre", faltas: 2, atrasos: 1, licencias: 0, presentes: 55 },
-            { trimestre: "2do Trimestre", faltas: 1, atrasos: 0, licencias: 1, presentes: 58 },
-            { trimestre: "3er Trimestre", faltas: 0, atrasos: 2, licencias: 0, presentes: 60 }
+            { trimestre: "1er Trim.", faltas: 2, atrasos: 1, licencias: 0, presentes: 50 },
+            { trimestre: "2do Trim.", faltas: 0, atrasos: 0, licencias: 1, presentes: 52 },
+            { trimestre: "3er Trim.", faltas: 1, atrasos: 2, licencias: 0, presentes: 49 }
         ]
     },
     "7654321": {
         asistencia: [
-            { trimestre: "1er Trimestre", faltas: 3, atrasos: 2, licencias: 1, presentes: 50 },
-            { trimestre: "2do Trimestre", faltas: 0, atrasos: 1, licencias: 0, presentes: 60 },
-            { trimestre: "3er Trimestre", faltas: 1, atrasos: 0, licencias: 0, presentes: 59 }
+            { trimestre: "1er Trim.", faltas: 0, atrasos: 1, licencias: 0, presentes: 55 },
+            { trimestre: "2do Trim.", faltas: 1, atrasos: 0, licencias: 0, presentes: 54 },
+            { trimestre: "3er Trim.", faltas: 2, atrasos: 1, licencias: 1, presentes: 50 }
         ]
     }
 };
 
 // ===============================
-// OBTENER DATOS DEL LOGIN
+// CARGAR ASISTENCIA EN LA TABLA
 // ===============================
-const data = JSON.parse(localStorage.getItem("estudiante"));
+function cargarAsistencia(data) {
+    const tabla = document.getElementById("grades-table");
+    if (!tabla) return;
 
-// ===============================
-// VALIDAR SESIÓN
-// ===============================
-if (!data) {
-    window.location.href = "index.html";
-}
+    tabla.innerHTML = ""; // limpiar tabla
 
-// ===============================
-// DATOS DEL ESTUDIANTE
-// ===============================
-const ci = data.ci;
-const estudianteBD = estudiantesAsistencia[ci];
+    const asistenciaEstudiante = estudiantesAsistencia[data.ci]?.asistencia || [];
 
-// Si no tiene datos registrados
-if (!estudianteBD) {
-    alert("No hay datos de asistencia para este estudiante");
-}
-
-// ===============================
-// MOSTRAR DATOS (YA COMPATIBLE CON TU HEADER)
-// ===============================
-document.getElementById("student-name").textContent = data.nombre;
-document.getElementById("nombreCompleto").textContent = data.nombreCompleto;
-document.getElementById("course-name").textContent = data.curso;
-
-document.getElementById("student-name-main").textContent = data.nombreCompleto;
-document.getElementById("course-name-main").textContent = data.curso;
-
-// ===============================
-// GENERAR TABLA
-// ===============================
-const tabla = document.getElementById("grades-table");
-
-if (estudianteBD) {
-    estudianteBD.asistencia.forEach(dato => {
-        const fila = `
-            <tr>
-                <td>${dato.trimestre}</td>
-                <td>${dato.faltas}</td>
-                <td>${dato.atrasos}</td>
-                <td>${dato.licencias}</td>
-                <td>${dato.presentes}</td>
-            </tr>
+    asistenciaEstudiante.forEach(item => {
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+            <td>${item.trimestre}</td>
+            <td>${item.faltas}</td>
+            <td>${item.atrasos}</td>
+            <td>${item.licencias}</td>
+            <td>${item.presentes}</td>
         `;
-        tabla.innerHTML += fila;
+        tabla.appendChild(fila);
     });
 }
 
-// ===============================
-// DROPDOWN PERFIL (POR SI NO SE EJECUTA EN MENU.JS)
-// ===============================
-const toggle = document.getElementById("dropdownToggle");
-if (toggle) {
-    toggle.addEventListener("click", () => {
-        document.getElementById("dropdownMenu").classList.toggle("active");
-    });
-}
 // ===============================
 // MENÚ LATERAL (MÓVIL)
 // ===============================
 function toggleMenu() {
-
     const paginaActual = window.location.pathname;
 
     if (paginaActual.includes("lateral.html")) {
@@ -117,4 +85,12 @@ function toggleMenu() {
     } else {
         window.location.href = "lateral.html";
     }
+}
+
+// ===============================
+// CERRAR SESIÓN
+// ===============================
+function cerrarSesion() {
+    localStorage.removeItem("estudiante");
+    window.location.href = "lateral.html";
 }
