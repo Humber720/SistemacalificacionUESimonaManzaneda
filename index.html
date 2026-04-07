@@ -2,38 +2,90 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Plataforma Educación Musical</title>
-    <link rel="stylesheet" href="inicio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Educación Musical</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-<!-- Encabezado con el nombre de la Unidad Educativa -->
+
+    <!-- ENCABEZADO -->
     <header>
-        <h1>UNIDAD EDUCATIVA "SIMONA MANZANEDA"</h1>
+        <h2>UNIDAD EDUCATIVA "SIMONA MANZANEDA"</h2>
     </header>
 
+    <!-- CONTENEDOR PRINCIPAL -->
     <div class="container">
-        <h3 style="color: white;">INGRESO A NOTAS DE CALIFICACIÓN</h3>
-        <h1>EDUCACIÓN MUSICAL</h1>
-        <form id="loginForm" onsubmit="login(event)">
-            <label for="username">Usuario</label>
-            <input type="text" id="username" name="username" placeholder="Ingresa tu nombre (Ej. JUAN PABLO)" required>
+        
+        <div class="login-box">
+            <h3>Ingreso a Notas</h3>
+            <h1>Educación Musical</h1>
 
-            <label for="password">Contraseña</label>
-            <div class="password-container">
-                <input type="password" id="password" name="password" placeholder="Ingresa nro de cedula identidad" required>
-                <!--<img src="ojo.png" alt="Ver" id="togglePassword" onclick="togglePasswordVisibility()">-->
-                <span class="toggle-password" onclick="togglePasswordVisibility()">
-                    <img src="ojo2.png" alt="Mostrar/Ocultar Contraseña" id="eyeIcon" width="20px" height="20px">
-                </span>
-            </div>
-            <button type="submit">Ingresar</button>
-        </form>
+            <!-- MENSAJE INFORMATIVO -->
+            <p class="info">
+                Ingrese su número de carnet en ambos campos
+            </p>
+
+            <form id="loginForm">
+
+                <!-- USUARIO = CI -->
+                <label for="username">Número de Carnet (Usuario)</label>
+                <div class="input-container">
+                    <input 
+                        type="number" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Ej: 1234567"
+                        required
+                    >
+                </div>
+
+                <!-- CONTRASEÑA = CI -->
+                <label for="password">Número de Carnet (Contraseña)</label>
+                <div class="input-container">
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Repita su C.I."
+                        required
+                    >
+
+                    <!-- BOTÓN OJITO -->
+                    <span class="toggle" onclick="togglePasswordVisibility()">
+                        
+                        <!-- OJO ABIERTO -->
+                        <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" 
+                            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+
+                        <!-- OJO CERRADO -->
+                        <svg id="eyeClose" xmlns="http://www.w3.org/2000/svg" 
+                            width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="display:none;">
+                            <path d="M17.94 17.94A10.94 10.94 0 0112 20C5 20 1 12 1 12a21.77 21.77 0 015.06-6.94"/>
+                            <path d="M1 1l22 22"/>
+                        </svg>
+
+                    </span>
+                </div>
+
+                <!-- BOTÓN -->
+                <button type="submit">Ingresar</button>
+
+                <!-- MENSAJE -->
+                <p id="mensaje"></p>
+            </form>
+        </div>
     </div>
-    <!-- Pie de página con el nombre de la Unidad Educativa -->
+
+    <!-- PIE -->
     <footer>
         <p>&copy; Prof. Humberto Yupanqui C.</p>
     </footer>
-    <script src="plataforma.js"></script>  
+   
+    <script src="menu.js"></script>
+
 </body>
 </html>
