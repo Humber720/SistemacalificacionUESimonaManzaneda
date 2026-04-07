@@ -1,0 +1,270 @@
+/* ================= CONTENIDO PRINCIPAL ESTUDIANTES ================= */
+.container {
+    max-width: 950px;
+    margin: 30px auto;
+    background: #ffffffcc;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+/* ================= TITULOS PRINCIPALES ================= */
+.container h3, .container h4 {
+    color: #1e40af;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    animation: tituloAnim 1s ease-out;
+}
+
+@keyframes tituloAnim {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.container h3 p, .container h4 p {
+    margin: 0;
+}
+
+/* ================= BOTONES ================= */
+.container button {
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.container button:hover {
+    background: linear-gradient(90deg, #2563eb, #0ea5e9);
+    transform: scale(1.1);
+}
+
+/* ================= DESCRIPCIÓN ================= */
+.container .descripcion {
+    font-size: 16px;
+    color: #1e293b;
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.7;
+    animation: fadeInText 1s ease forwards;
+}
+
+@keyframes fadeInText {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* ================= MODAL DE DESCARGA ================= */
+.modal-descarga {
+    display: none;
+    background: #e0f7fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.modal-descarga button {
+    margin: 8px;
+    background: #22c55e;
+    font-weight: bold;
+}
+
+.modal-descarga button:hover {
+    background: #16a34a;
+}
+
+/* ================= INFORMACIÓN DEL ESTUDIANTE ================= */
+.student-info {
+    background: linear-gradient(135deg, #fef08a, #facc15);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-info:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.student-info h2 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.student-info p {
+    font-weight: bold;
+    color: #1e40af;
+}
+
+/* ================= TABLA DE CALIFICACIONES ================= */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.grades-table caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1e40af;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+.grades-table th, .grades-table td {
+    padding: 12px 10px;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grades-table th {
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    color: white;
+}
+
+.grades-table tr:nth-child(even) {
+    background: #f0f9ff;
+}
+
+.grades-table tr:hover {
+    background: #dbeafe;
+    transform: scale(1.01);
+}
+
+/* ================= ESTADOS APROBADO/REPROBADO ================= */
+.container .aprobado {
+    color: #16a34a;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+
+.container .aprobado:hover {
+    background: #bbf7d0;
+    transform: scale(1.05);
+}
+
+.container .reprobado {
+    color: #dc2626;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 10px;
+    transition: all 0.3s ease;
+}
+
+.container .reprobado:hover {
+    background: #fecaca;
+    transform: scale(1.05);
+}
+
+/* BOTONES PARA PDF */
+.btn-ver, .btn-descargar {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+}
+
+.btn-ver {
+  background-color: #3498db;
+}
+
+.btn-descargar {
+  background-color: #27ae60;
+}
+
+/* VISOR PDF */
+.visor-container {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+#visorPDF {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE PDF */
+@media (max-width: 768px) {
+  .visor-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visor-container {
+    height: 300px;
+  }
+}
+
+/* ================= RESPONSIVE PARA CELULAR ================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .grades-table th, .grades-table td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+
+    .container button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .student-info h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grades-table th, .grades-table td {
+        padding: 8px 4px;
+        font-size: 13px;
+    }
+
+    .container button {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .student-info h2 {
+        font-size: 18px;
+    }
+}

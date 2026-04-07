@@ -1,0 +1,141 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f1f5f9;
+}
+
+/* ================= CONTENEDOR ================= */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* ICONO */
+.icono-circular {
+    width: 70px;
+    height: 70px;
+    background: white;
+    color: #1e3a8a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 10px;
+}
+
+/* TITULOS */
+.sidebar h4, .sidebar h6 {
+    text-align: center;
+}
+
+/* BOTONES */
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* HOVER */
+.sidebar button:hover {
+    background: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* ACTIVO */
+.sidebar button.activo {
+    background: white;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+    margin-top: auto;
+    background: #ef4444 !important;
+    text-align: center;
+}
+
+.cerrar:hover {
+    background: #dc2626 !important;
+}
+
+/* ================= CONTENIDO ================= */
+.contenido {
+    flex: 1;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+.contenido h1 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+/* ================= TARJETA ================= */
+#infoCurso {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    min-height: 200px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        height: 100%;
+        z-index: 200;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .contenido {
+        padding: 20px;
+    }
+
+    /* BOTÓN PARA ABRIR MENU */
+    .btn-menu {
+        position: fixed;
+        top: 80px;
+        left: 10px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 300;
+    }
+}

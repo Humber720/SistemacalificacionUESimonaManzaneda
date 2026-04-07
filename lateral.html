@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ================= META ANTICACHE ================= -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+  <title>Plataforma Escolar</title>
+      <!-- CSS para la cabecera -->
+      <link rel="stylesheet" href="cabecera.css" />
+      <!-- CSS general de la página -->
+      <script src="menu.js"></script>
+      <link rel="stylesheet" href="lateral.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="encabezado">
+    <div class="encabezado-container">
+
+      <!-- LOGO -->
+      <div class="encabezado-logo">
+        <div class="logo-icono">🎵</div>
+        <span class="encabezado-titulo">Educación Musical</span>
+      </div>
+
+      <!-- MENÚ SCROLL -->
+      <div class="menu-scroll-contenedor">
+
+        <button class="flecha izquierda" onclick="scrollMenu(-150)">‹</button>
+
+        <nav class="menu-scroll" id="menuScroll">
+          <a href="menu.html">Inicio</a>
+          <a href="calificacion.html">Calificación</a>
+          <a href="asistencia.html">Asistencia</a>
+        </nav>
+
+        <button class="flecha derecha" onclick="scrollMenu(150)">›</button>
+
+      </div>
+
+      <!-- 👇 BOTÓN APARTE -->
+<button class="menu-lateral-btn" onclick="toggleMenu()">
+  ☰
+</button>
+
+      <!-- PERFIL -->
+      <div class="perfil-wrapper">
+        <div class="encabezado-perfil">
+
+          <button id="dropdownToggle" class="encabezado-perfil-btn">
+            <div class="avatar-circle">👤</div>
+            <span id="student-name" class="encabezado-nombre">Estudiante</span>
+          </button>
+
+          <!-- DROPDOWN -->
+          <div id="dropdownMenu" class="menu-dropdown">
+            <div class="info">
+              <p><strong>Nombre:</strong> <span id="nombreCompleto">--</span></p>
+              <p><strong>Curso:</strong> <span id="course-name">--</span></p>
+            </div>
+
+            <button onclick="cerrarSesion()" class="cerrar">
+              Cerrar sesión
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+<!-- MENU LATERAL IZQUIERDA --> 
+  <div class="container">
+    <aside class="sidebar">
+      <div class="icono-circular">🛢️</div>
+      <center><h6>Autor Prof. Humberto</h6></center>
+      <center><h4>EDUCACIÓN MUSICAL</h4></center>
+      <center><h4>TEXTOS 2026</h4></center>
+        <button onclick="mostrarContenido('1roPrimaria', event)">📚1ro Primaria</button>
+        <button onclick="mostrarContenido('2doPrimaria', event)">📚2do Primaria</button>
+        <button onclick="mostrarContenido('3roPrimaria', event)">📚3ro Primaria</button>
+        <button onclick="mostrarContenido('4toPrimaria', event)">📚4to Primaria</button>
+        <button onclick="mostrarContenido('5toPrimaria', event)">📚5to Primaria</button>
+        <button onclick="mostrarContenido('6toPrimaria', event)">📚6to Primaria</button>
+        <button onclick="mostrarContenido('himnos', event)">📖HIMNOS PATRIÓTICOS</button>
+        <button onclick="mostrarContenido('partituras', event)">🎼PARTITURAS MUSICALES</button>
+
+      <div class="acciones">
+        <button onclick="cerrarSesion()" class="cerrar">🔒Cerrar sesión</button>
+      </div>
+    </aside>
+    <main class="contenido">
+      <h1 id="tituloCurso">Selecciona un curso</h1>
+      <div id="infoCurso">Aquí se mostrará la información del curso seleccionado.</div>
+    </main>
+  </div>
+  <script src="lateral.js"></script>
+</body>
+</html>

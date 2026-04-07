@@ -1,0 +1,156 @@
+/* ========================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================= */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f0f9ff);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================= */
+/* INFO ESTUDIANTE */
+/* ========================= */
+.student-info {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.student-info h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    font-size: 14px;
+}
+
+/* ========================= */
+/* TABLA */
+/* ========================= */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+/* TITULO */
+.grades-table caption {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* ENCABEZADO */
+.grades-table th {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* CELDAS */
+.grades-table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* FILAS COLOREADAS */
+.grades-table tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.grades-table tr:nth-child(odd) {
+    background: #e0f2fe;
+}
+
+/* EFECTO HOVER */
+.grades-table tbody tr:hover {
+    background: #fde68a;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+/* ========================= */
+/* EFECTOS DIVERTIDOS (PRIMARIA) */
+/* ========================= */
+
+/* Colores según tipo */
+.grades-table td:nth-child(2) { /* faltas */
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.grades-table td:nth-child(3) { /* atrasos */
+    color: #f59e0b;
+}
+
+.grades-table td:nth-child(5) { /* presentes */
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .student-info h2 {
+        font-size: 16px;
+    }
+
+    .grades-table th,
+    .grades-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .student-info {
+        padding: 10px;
+    }
+
+    .grades-table caption {
+        font-size: 14px;
+    }
+
+    .grades-table th,
+    .grades-table td {
+        font-size: 11px;
+    }
+}

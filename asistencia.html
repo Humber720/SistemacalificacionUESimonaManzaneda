@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ================= META ANTICACHE ================= -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+  <title>Plataforma de Calificación</title>
+  <!-- CSS general de la página -->
+   <link rel="stylesheet" href="cabecera.css" />
+   <link rel="stylesheet" href="asistencia.css" />
+   <script src="menu.js"></script>
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="encabezado">
+    <div class="encabezado-container">
+
+      <!-- LOGO -->
+      <div class="encabezado-logo">
+        <div class="logo-icono">🎵</div>
+        <span class="encabezado-titulo">Educación Musical</span>
+      </div>
+
+      <!-- MENÚ SCROLL -->
+      <div class="menu-scroll-contenedor">
+
+        <button class="flecha izquierda" onclick="scrollMenu(-150)">‹</button>
+
+        <nav class="menu-scroll" id="menuScroll">
+          <a href="menu.html">Inicio</a>
+          <a href="calificacion.html">Calificación</a>
+          <a href="asistencia.html">Asistencia</a>
+        </nav>
+
+        <button class="flecha derecha" onclick="scrollMenu(150)">›</button>
+
+      </div>
+
+      <!-- 👇 BOTÓN APARTE -->
+<button class="menu-lateral-btn" onclick="toggleMenu()">
+  ☰
+</button>
+
+      <!-- PERFIL -->
+      <div class="perfil-wrapper">
+        <div class="encabezado-perfil">
+
+          <button id="dropdownToggle" class="encabezado-perfil-btn">
+            <div class="avatar-circle">👤</div>
+            <span id="student-name" class="encabezado-nombre">Estudiante</span>
+          </button>
+
+          <!-- DROPDOWN -->
+          <div id="dropdownMenu" class="menu-dropdown">
+            <div class="info">
+              <p><strong>Nombre:</strong> <span id="nombreCompleto">--</span></p>
+              <p><strong>Curso:</strong> <span id="course-name">--</span></p>
+            </div>
+
+            <button onclick="cerrarSesion()" class="cerrar">
+              Cerrar sesión
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+ 
+<!-- Contenedor principal de calificación -->
+<div class="container">
+  <!-- Información del estudiante -->
+  <div class="student-info">
+    <h2>ESTUDIANTE: <span id="student-name-main"></span></h2>
+    <p><strong>Curso:</strong> <span id="course-name-main"></span></p>
+  </div>
+  <!-- Tabla de calificaciones -->
+  <div class="table-wrapper">
+    <table class="grades-table">
+      <caption><b>ASISTENCIA EN LA CLASE DE MUSICA</b></caption>
+      <thead>
+        <tr>
+          <th>Trimestre</th>
+          <th>Faltas</th>
+          <th>Atrasos</th>
+          <th>Licencias</th>
+          <th>Presentes</th>
+        </tr>
+      </thead>
+      <tbody id="grades-table">
+        <!-- Las filas se insertan desde calificacion.js -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Scripts -->
+    <script src="asistencia.js"></script>
+
+
+</html>

@@ -1,0 +1,373 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #38bdf8);
+    color: #1f2937;
+}
+
+/* ================= HEADER ================= */
+.encabezado {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.encabezado-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+/* LOGO */
+.encabezado-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 0 auto;
+}
+
+.logo-icono {
+    font-size: 22px;
+}
+
+.encabezado-titulo {
+    font-weight: bold;
+    color: #1e3a8a;
+    white-space: nowrap;
+}
+
+/* ================= MENÚ CENTRADO ================= */
+.menu-scroll-contenedor {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* 🔥 CENTRADO */
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.menu-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-scroll a,
+.menu-scroll button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #e0f2fe;
+    cursor: pointer;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.menu-scroll a.activo {
+    background: #2563eb;
+    color: white;
+}
+
+.menu-scroll button:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* FLECHAS */
+.flecha {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ================= BOTÓN ☰ ================= */
+.menu-lateral-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.3s;
+    flex: 0 0 auto;
+}
+
+.menu-lateral-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.1);
+}
+
+/* ================= PERFIL ================= */
+.perfil-wrapper {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.encabezado-perfil-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #e0f2fe;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.encabezado-perfil-btn:hover {
+    background: #dbeafe;
+}
+
+.avatar-circle {
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.encabezado-nombre {
+    font-size: 14px;
+}
+
+/* DROPDOWN */
+.menu-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.menu-dropdown.active {
+    display: block;
+}
+
+/* ================= CONTENIDO ================= */
+.main-container {
+    padding: 20px;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.bienvenida h1 {
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+/* ================= AVISOS ================= */
+.avisos {
+    max-width: 900px;
+    margin: auto;
+}
+
+.avisos h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.aviso {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2563eb;
+    transition: 0.3s;
+}
+
+.aviso:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= PUBLICIDAD ================= */
+.publicidad-container {
+    margin: 30px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.publicidad {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.publicidad img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s;
+}
+
+.publicidad img.active {
+    opacity: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+/* ================= boton cerrar ================= */
+.cerrar {
+    width: 100%;
+    background: #ef4444; /* 🔴 rojo */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cerrar:hover {
+    background: #dc2626; /* 🔥 rojo más oscuro */
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .encabezado-container {
+        gap: 5px;
+    }
+
+    .encabezado-titulo {
+        font-size: 13px;
+    }
+
+    .menu-scroll-contenedor {
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .menu-scroll {
+        justify-content: flex-start; /* 🔥 mejor en celular */
+    }
+
+    .menu-scroll a,
+    .menu-scroll button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    .menu-lateral-btn {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .encabezado-perfil-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .encabezado-nombre {
+        max-width: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .bienvenida {
+        padding: 15px;
+    }
+
+    .publicidad {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .encabezado-nombre {
+        display: none;
+    }
+
+    .bienvenida h1 {
+        font-size: 20px;
+    }
+}
+/* 📱 Ocultar "Educación Musical" SOLO en celular vertical */
+@media (max-width: 600px) and (orientation: portrait) {
+  .encabezado-titulo {
+    display: none;
+  }
+}
+/* 📱 CELULAR HORIZONTAL - ARREGLO REAL */
+@media (max-width: 900px) and (orientation: landscape) {
+
+  /* 🔥 CLAVE: quitar centrado */
+  .menu-scroll-contenedor {
+    justify-content: flex-start;
+  }
+
+  /* 🔥 evita desbordes en flex */
+  .menu-scroll-contenedor,
+  .menu-scroll {
+    min-width: 0;
+  }
+
+  /* 🔥 perfil se mantiene dentro */
+  .perfil-wrapper {
+    flex-shrink: 0;
+  }
+
+  /* 🔥 nombre controlado */
+  .encabezado-nombre {
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+}
+
