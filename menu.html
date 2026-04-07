@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ================= META ANTICACHE ================= -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>Plataforma Educación Musical</title>
+  <!-- CSS -->
+   <link rel="stylesheet" href="cabecera.css" />
+   <link rel="stylesheet" href="menu.css" />
+
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="encabezado">
+    <div class="encabezado-container">
+
+      <!-- LOGO -->
+      <div class="encabezado-logo">
+        <div class="logo-icono">🎵</div>
+        <span class="encabezado-titulo">Educación Musical</span>
+      </div>
+
+      <!-- MENÚ SCROLL -->
+      <div class="menu-scroll-contenedor">
+
+        <button class="flecha izquierda" onclick="scrollMenu(-150)">‹</button>
+
+        <nav class="menu-scroll" id="menuScroll">
+          <a href="menu.html">Inicio</a>
+          <a href="calificacion.html">Calificación</a>
+          <a href="asistencia.html">Asistencia</a>
+        </nav>
+
+        <button class="flecha derecha" onclick="scrollMenu(150)">›</button>
+
+      </div>
+
+            <!-- 👇 BOTÓN APARTE -->
+      <button class="menu-lateral-btn" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <!-- PERFIL -->
+      <div class="perfil-wrapper">
+        <div class="encabezado-perfil">
+
+          <button id="dropdownToggle" class="encabezado-perfil-btn">
+            <div class="avatar-circle">👤</div>
+            <span id="student-name" class="encabezado-nombre">Estudiante</span>
+          </button>
+
+          <!-- DROPDOWN -->
+          <div id="dropdownMenu" class="menu-dropdown">
+            <div class="info">
+              <p><strong>Nombre:</strong> <span id="nombreCompleto">--</span></p>
+              <p><strong>Curso:</strong> <span id="course-name">--</span></p>
+            </div>
+
+            <button onclick="cerrarSesion()" class="cerrar">
+              Cerrar sesión
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main class="main-container">
+
+    <!-- BIENVENIDA -->
+    <section class="bienvenida">
+      <h2>Unidad Educativa "Simona Manzaneda"</h2>
+      <h1>BIENVENIDO(A)"</h1>
+      <h2 id="nombrePrincipal">Estudiante</h2>
+      <p><strong>Curso:</strong> <span id="cursoPrincipal"></span></p>
+    </section>
+
+    <!-- AVISOS -->
+    <section class="avisos">
+      <h2>📢 Avisos y Comunicados</h2>
+
+      <div class="aviso">
+        <h3>Entrevista Pedagógica</h3>
+        <p>
+          Se comunica a los estudiantes de la banda que el ensayo será el 
+          <strong>viernes 24 de octubre</strong> de <strong>14:00 a 16:00</strong>.
+        </p>
+        <span>Publicado: 22/10/2025</span>
+      </div>
+ 
+    </section>
+
+          <!-- PUBLICIDAD (debajo del formulario) -->
+    <div class="publicidad-container">
+      <button class="prev">&#10094;</button>
+      <div class="publicidad">
+        <img src="img/pub1.jpg" class="active" alt="Publicidad 1">
+        <img src="img/pub2.jpg" alt="Publicidad 2">
+        <img src="img/pub3.jpg" alt="Publicidad 3">
+        <img src="img/pub4.jpg" alt="Publicidad 4">
+        <img src="img/pub5.jpg" alt="Publicidad 5">
+        <img src="img/pub6.jpg" alt="Publicidad 6">
+        <img src="img/pub7.jpg" alt="Publicidad 7">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </main>
+  <script src="menu.js"></script>
+
+</body>
+</html>
