@@ -27,8 +27,8 @@
 // BASE DE DATOS DE ESTUDIANTES
 // ===============================
 const estudiantes = {
-    "1234567": { nombre: "VALENTINA", apellido: "PEREZ QUISPE", curso: "1ro de Secundaria" },
-    "7654321": { nombre: "JUAN", apellido: "LOPEZ MAMANI", curso: "2do de Secundaria" }
+    "1234567": { nombre: "VALENTINA", apellido: "PEREZ QUISPE", curso: "1ro de Primaria" },
+    "7654321": { nombre: "JUAN", apellido: "LOPEZ MAMANI", curso: "2do de Primaria" }
 };
 
 // ===============================
@@ -252,3 +252,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+// ===============================
+// MENÚ LATERAL (MÓVIL)
+// ===============================
+function toggleMenu() {
+
+    const paginaActual = window.location.pathname;
+
+    if (paginaActual.includes("lateral.html")) {
+        window.history.back(); // vuelve a la página anterior
+    } else {
+        window.location.href = "lateral.html";
+    }
+}
