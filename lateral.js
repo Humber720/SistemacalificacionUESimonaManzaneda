@@ -76,4 +76,8 @@ function toggleMenu() {
         window.location.href = "lateral.html";
     }
 }
+// ===============================
+// LIMPIAR HISTORIAL EN LATERAL
+// ===============================
+history.replaceState(null, null, location.href);
   
