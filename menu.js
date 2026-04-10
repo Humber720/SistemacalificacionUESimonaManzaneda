@@ -369,15 +369,15 @@ function toggleMenu() {
     const data = localStorage.getItem("estudiante");
     const currentPage = window.location.pathname.split("/").pop();
 
-    // ❌ ANTES:
-    // if (!data || currentPage === "index.html") return;
-
-    // ✅ AHORA (EXCLUYE TAMBIÉN lateral.html)
+    // No aplicar en login ni lateral
     if (!data || currentPage === "index.html" || currentPage === "lateral.html") return;
+
+    // 👇 IMPORTANTE: limpiar antes de agregar
+    window.onpopstate = null;
 
     history.pushState(null, null, location.href);
 
-    window.addEventListener("popstate", function () {
+    window.onpopstate = function () {
 
         const salir = confirm("¿Estás seguro que deseas salir del sistema?");
 
@@ -387,6 +387,6 @@ function toggleMenu() {
         } else {
             history.pushState(null, null, location.href);
         }
-    });
+    };
 
 })();
