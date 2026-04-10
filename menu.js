@@ -353,11 +353,10 @@ function toggleMenu() {
     const paginaActual = window.location.pathname;
 
     if (paginaActual.includes("lateral.html")) {
-        // 👇 MARCAR antes de retroceder
-        navegacionInterna = true;
-
-        window.history.back();
+        const volver = localStorage.getItem("ultimaPagina") || "menu.html";
+        window.location.href = volver;
     } else {
+        localStorage.setItem("ultimaPagina", paginaActual);
         window.location.href = "lateral.html";
     }
 }
