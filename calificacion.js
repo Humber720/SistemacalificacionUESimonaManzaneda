@@ -736,5 +736,9 @@ function toggleMenu() {
 // ===============================
 function cerrarSesion() {
     localStorage.removeItem("estudiante");
-    window.location.href = "lateral.html";
+
+    // 👇 marcar que cerró sesión
+    sessionStorage.setItem("logout", "true");
+
+    window.location.replace("index.html");
 }
