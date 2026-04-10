@@ -140,8 +140,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // AUTOLOGIN (si ya inició sesión y está en index.html)
     const data = localStorage.getItem("estudiante");
+    
+    // Solo redirige si viene de navegación normal (no desde logout)
     if (data && window.location.pathname.includes("index.html")) {
-        window.location.href = "menu.html";
+        if (!sessionStorage.getItem("logout")) {
+            window.location.href = "menu.html";
+        }
     }
 
     // MOSTRAR DATOS SI HAY SESIÓN
