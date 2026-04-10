@@ -356,3 +356,41 @@ function toggleMenu() {
         window.location.href = "lateral.html";
     }
 }
+//PARA SALIR
+// ===============================
+// BLOQUEAR BOTÓN ATRÁS + CONFIRMAR SALIDA
+// ===============================
+(function () {
+
+    // Solo aplicar si hay sesión activa
+    const data = localStorage.getItem("estudiante");
+    if (!data) return;
+
+    // Empujar estado para evitar retroceso
+    history.pushState(null, null, location.href);
+
+    window.addEventListener("popstate", function () {
+
+        // Mostrar confirmación tipo banca móvil
+        const salir = confirm("¿Estás seguro que deseas salir del sistema?");
+
+        if (salir) {
+            // Cerrar sesión completamente
+            localStorage.removeItem("estudiante");
+            window.location.href = "index.html";
+        } else {
+            // Bloquear retroceso (lo mantiene en la página)
+            history.pushState(null, null, location.href);
+        }
+    });
+
+})();
+//PARA MOSTRAR MENSAJE PARA SALIR
+// Evitar salir con recarga o cerrar pestaña
+window.addEventListener("beforeunload", function (e) {
+    const data = localStorage.getItem("estudiante");
+    if (data) {
+        e.preventDefault();
+        e.returnValue = "";
+    }
+});
