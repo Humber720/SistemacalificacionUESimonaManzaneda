@@ -60,7 +60,11 @@ function mostrarContenido(curso, e) {
 // ===============================
 function cerrarSesion() {
     localStorage.removeItem("estudiante");
-    window.location.href = "index.html";
+
+    // 👇 marcar que cerró sesión
+    sessionStorage.setItem("logout", "true");
+
+    window.location.replace("index.html");
 }
 
 // ===============================
