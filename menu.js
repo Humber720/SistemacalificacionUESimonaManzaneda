@@ -351,7 +351,10 @@ function toggleMenu() {
     const paginaActual = window.location.pathname;
 
     if (paginaActual.includes("lateral.html")) {
-        window.history.back(); // vuelve a la página anterior
+        // 👇 MARCAR QUE ES NAVEGACIÓN INTERNA
+        sessionStorage.setItem("navegacionInterna", "true");
+
+        window.history.back(); // vuelve sin mostrar confirmación
     } else {
         window.location.href = "lateral.html";
     }
@@ -365,13 +368,22 @@ function toggleMenu() {
     const data = localStorage.getItem("estudiante");
     const currentPage = window.location.pathname.split("/").pop();
 
-    // No aplicar en login
     if (!data || currentPage === "index.html") return;
 
     history.pushState(null, null, location.href);
 
     window.addEventListener("popstate", function () {
 
+        // 👇 VERIFICAR SI ES NAVEGACIÓN INTERNA
+        const interna = sessionStorage.getItem("navegacionInterna");
+
+        if (interna === "true") {
+            // Limpiar bandera y permitir regreso normal
+            sessionStorage.removeItem("navegacionInterna");
+            return;
+        }
+
+        // 👇 SOLO AQUÍ muestra confirmación real
         const salir = confirm("¿Estás seguro que deseas salir del sistema?");
 
         if (salir) {
