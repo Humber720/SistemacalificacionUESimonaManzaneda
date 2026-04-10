@@ -1,3 +1,5 @@
+// 👇 VARIABLE GLOBAL (AQUÍ)
+let navegacionInterna = false;
 // ===============================
 // VERIFICAR SESIÓN AL CARGAR PÁGINA (Previene volver atrás)
 // ===============================
@@ -351,10 +353,10 @@ function toggleMenu() {
     const paginaActual = window.location.pathname;
 
     if (paginaActual.includes("lateral.html")) {
-        // 👇 MARCAR QUE ES NAVEGACIÓN INTERNA
-        sessionStorage.setItem("navegacionInterna", "true");
+        // 👇 MARCAR antes de retroceder
+        navegacionInterna = true;
 
-        window.history.back(); // vuelve sin mostrar confirmación
+        window.history.back();
     } else {
         window.location.href = "lateral.html";
     }
@@ -374,16 +376,13 @@ function toggleMenu() {
 
     window.addEventListener("popstate", function () {
 
-        // 👇 VERIFICAR SI ES NAVEGACIÓN INTERNA
-        const interna = sessionStorage.getItem("navegacionInterna");
-
-        if (interna === "true") {
-            // Limpiar bandera y permitir regreso normal
-            sessionStorage.removeItem("navegacionInterna");
+        // 👇 SI ES NAVEGACIÓN INTERNA → NO HACER NADA
+        if (navegacionInterna) {
+            navegacionInterna = false;
             return;
         }
 
-        // 👇 SOLO AQUÍ muestra confirmación real
+        // 👇 SOLO AQUÍ bloquea
         const salir = confirm("¿Estás seguro que deseas salir del sistema?");
 
         if (salir) {
