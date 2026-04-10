@@ -369,19 +369,16 @@ function toggleMenu() {
     const data = localStorage.getItem("estudiante");
     const currentPage = window.location.pathname.split("/").pop();
 
-    if (!data || currentPage === "index.html") return;
+    // ❌ ANTES:
+    // if (!data || currentPage === "index.html") return;
+
+    // ✅ AHORA (EXCLUYE TAMBIÉN lateral.html)
+    if (!data || currentPage === "index.html" || currentPage === "lateral.html") return;
 
     history.pushState(null, null, location.href);
 
     window.addEventListener("popstate", function () {
 
-        // 👇 SI ES NAVEGACIÓN INTERNA → NO HACER NADA
-        if (navegacionInterna) {
-            navegacionInterna = false;
-            return;
-        }
-
-        // 👇 SOLO AQUÍ bloquea
         const salir = confirm("¿Estás seguro que deseas salir del sistema?");
 
         if (salir) {
