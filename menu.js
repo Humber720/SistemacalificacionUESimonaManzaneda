@@ -130,6 +130,18 @@ const estudiantes = {
 document.addEventListener("DOMContentLoaded", () => {
     // 👇 LIMPIAR logout (IMPORTANTE)
     sessionStorage.removeItem("logout");
+
+    // 👇 LIMPIAR FORMULARIO SI VIENE DEL HISTORIAL
+    window.addEventListener("pageshow", function (event) {
+        if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+            
+            limpiarInputs(); // limpia contraseña
+            limpiarMensaje(); // limpia mensaje
+
+            const user = document.getElementById("username");
+            if (user) user.value = "";
+        }
+    });
     // LOGIN FORM
     const form = document.getElementById("loginForm");
     if (form) {
@@ -263,7 +275,7 @@ function cerrarSesion() {
 
     // 👇 marcar que cerró sesión
     sessionStorage.setItem("logout", "true");
-
+   // 👇 IMPORTANTE: replace (no permite volver atrás)
     window.location.replace("index.html");
 }
 
