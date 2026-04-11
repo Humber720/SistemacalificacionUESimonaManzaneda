@@ -128,7 +128,8 @@ const estudiantes = {
 // INICIALIZAR EVENTOS
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
-
+    // 👇 LIMPIAR logout (IMPORTANTE)
+    sessionStorage.removeItem("logout");
     // LOGIN FORM
     const form = document.getElementById("loginForm");
     if (form) {
