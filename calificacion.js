@@ -92,67 +92,60 @@ const estudiantesNotas = {
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
-    "1234567": { // VALENTINA PEREZ QUISPE
-        calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
-            { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
-            { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
-        ]
-    },
 
     //2do de Primaria
     "15505305": { // CANTUTA LIMACHI YAMILE
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "57", autoevaluacion: "", observacion: "Falta presentar ultimas tareas" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17614196": { // CHOQUE MENA HEYDAN KALEB
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "10", autoevaluacion: "", observacion: "No cuenta con material escolar y no asiste a la clase de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15325697": { // FERNANDEZ CASTILLO MARISOL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "30", autoevaluacion: "", observacion: "Incompleto las tareas y la inasistencia a las clases de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15735347": { // FERNANDEZ FERNANDEZ DANIEL LUIS
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "90", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16372545": { // HUANCA QUISPE CARMEN VIRGINIA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "88", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15538197": { // HUISA MADANI MATIAS CALEB
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "92", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15574544": { // MOLLO RODRIGUEZ YESSENIA SARAHY
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "30", autoevaluacion: "", observacion: "No cuenta con material escolar de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16217781": { // PEREZ HUANCA CAMILA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "42", autoevaluacion: "", observacion: "No presento algunos tareas y no cuenta material escolar de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
@@ -282,98 +275,98 @@ const estudiantesNotas = {
     //4to de Primaria
     "17259685": { // ARHUIRI THAIS DANIELA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "51", autoevaluacion: "", observacion: "No presento algunas tareas" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16297349": { // ADUVIRI QUISPE SHARELA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "20", autoevaluacion: "", observacion: "NO presento tareas de música y no cuenta con material de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16653592": { // CANAZA CASTILLO ABNER ZENON
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "88", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16689391": { // CASTILLO FLORES NADIA WARA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "79", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17414259": { // FERNANDEZ CHOQUE DANNA AVRIL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "40", autoevaluacion: "", observacion: "No cuenta con material de música y no presento tareas" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17118554": { // FLORES CHOQUE SAMI VALERIA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "46", autoevaluacion: "", observacion: "No presento tareas de Himnos" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16959941": { // HUANCA QUISPE EUSEBIA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "54", autoevaluacion: "", observacion: "NO presento algunos Himnos" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15790869": { // ILLANES FALCON HANS ANTHONY
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "75", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17310758": { // MAMANI QUISPE LUZ CAMILA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "1", autoevaluacion: "", observacion: "No asiste a la clase de música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15027286": { // MAMANI RAMIREZ RUZENA ESDENKA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "53", autoevaluacion: "", observacion: "No presento tareas de Himnos" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17272587": { // MOLLINEDO MAMANI DANY JAIL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "77", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15680683": { // PAUCARA TORREZ YUAN EDUARDO
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "58", autoevaluacion: "", observacion: "No presento Himnos Nacional, Canción Vivir color canela, Himno Nacional en Aymara y la identificación de Himnos y Marchas" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15960112": { // QUISPE VILA SHEYLA LUCIANA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "67", autoevaluacion: "", observacion: "No presento la canción Vivir color canela (Zampoña) y Identificación de Himnos y Marchas" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16911786": { // VENEGAS FLORES ISMAEL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "53", autoevaluacion: "", observacion: "No participo en la entonación de Canto a Avaroa y no presento identificación de Himnos y Marchas en música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
@@ -489,119 +482,119 @@ const estudiantesNotas = {
     //6to de Primaria
     "16297336": { // ADUVIRI QUISPE SHARAI
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "45", autoevaluacion: "", observacion: "No presento Himno Nacional, Investigación de danzas, Marcha Naval y Cancion Pretenciosa(tarka) " },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "14479026": { // ALVAREZ FLORES ALISON MAYA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "83", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15645677": { // CANTUTA HUANCA YADIEL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "76", autoevaluacion: "", observacion: "No entono Exaltación al padre" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16789053": { // CONDORI AJAHUANA JHOSTIN
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "56", autoevaluacion: "", observacion: "No resondió el cuestionario" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17451940": { // ERGUETA AMARU MAIRYN ZULAMI
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "93", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17414278": { // FERNANDEZ CHOQUE ANYHELO MATEO
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "48", autoevaluacion: "", observacion: "No presento algunos tareas y no cuenta con material de Música" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16789847": { // FERNANDEZ FERNANDEZ MARY LUZ
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "87", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16883745": { // HUANCA QUISPE MAXIMILIANO
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "72", autoevaluacion: "", observacion: "Mejorar la conducta" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "14047775": { // MAMANI USNAYO ALEJANDRO
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "83", autoevaluacion: "", observacion: "No demostro entonación de Himno a Exaltación al padre" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "14304209": { // ORELLANA SILVA ISABELLA ANABEL
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "92", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "14801125": { // PARICAHUA CASTILLO ANDREI GEMIO
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "39", autoevaluacion: "", observacion: "No cuenta con material de música, No realizo cuestionario, Himno Nacional, Canto a Avaroa, Investigación de la danza, canción pretenciosa(tarka) y Marcha Naval" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15333051": { // PAUCARA ERGUETA HAROL JHONNATAN
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "90", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "15960084": { // QUISPE VILA SERGIO ANDREW
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "91", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16220469": { // QUISPE FERNANDEZ NOEMI YESICA
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "66", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16166926": { // QUISPE QUISPE THIAGO ZHAIR
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "42", autoevaluacion: "", observacion: "No realizo cuestionario, Himno Nacional, Canto a Avaroa, Recuperemos nuestro mar y Marcha Naval " },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "17184594": { // TERRAZAS RIOS CAMILA SHELLY
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "94", autoevaluacion: "", observacion: "" },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
     },
     "16960822": { // VENEGAS FLORES MAGALI
         calificaciones: [
-            { trimestre: "1er Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
+            { trimestre: "1er Trim.", puntaje: "55", autoevaluacion: "", observacion: "No entono Canto a Avaroa, No presento Himno Nacional, no investigo danzas, No presento recuperemos nuestro mar.  " },
             { trimestre: "2do Trim.", puntaje: "", autoevaluacion: "", observacion: "" },
             { trimestre: "3er Trim.", puntaje: "", autoevaluacion: "", observacion: "" }
         ]
