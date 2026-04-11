@@ -109,56 +109,56 @@ const estudiantesAsistencia = {
     //2do de Primaria
     "15505305": { // CANTUTA LIMACHI YAMILE
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17614196": { // CHOQUE MENA HEYDAN KALEB
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "8", atrasos: "", licencias: "", presentes: "1" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15325697": { // FERNANDEZ CASTILLO MARISOL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "4", atrasos: "", licencias: "", presentes: "5" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15735347": { // FERNANDEZ FERNANDEZ DANIEL LUIS
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "1", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16372545": { // HUANCA QUISPE CARMEN VIRGINIA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15538197": { // HUISA MADANI MATIAS CALEB
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15574544": { // MOLLO RODRIGUEZ YESSENIA SARAHY
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "2", atrasos: "", licencias: "", presentes: "7" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16217781": { // PEREZ HUANCA CAMILA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
@@ -287,98 +287,98 @@ const estudiantesAsistencia = {
     //4to de Primaria
     "17259685": { // ARHUIRI THAIS DANIELA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16297349": { // ADUVIRI QUISPE SHARELA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "3", atrasos: "", licencias: "", presentes: "6" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16653592": { // CANAZA CASTILLO ABNER ZENON
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16689391": { // CASTILLO FLORES NADIA WARA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17414259": { // FERNANDEZ CHOQUE DANNA AVRIL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "3", atrasos: "3", licencias: "", presentes: "3" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17118554": { // FLORES CHOQUE SAMI VALERIA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16959941": { // HUANCA QUISPE EUSEBIA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15790869": { // ILLANES FALCON HANS ANTHONY
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17310758": { // MAMANI QUISPE LUZ CAMILA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "9", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15027286": { // MAMANI RAMIREZ RUZENA ESDENKA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "1", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17272587": { // MOLLINEDO MAMANI DANY JAIL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "1", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15680683": { // PAUCARA TORREZ YUAN EDUARDO
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15960112": { // QUISPE VILA SHEYLA LUCIANA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16911786": { // VENEGAS FLORES ISMAEL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "3", atrasos: "", licencias: "", presentes: "6" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
@@ -494,119 +494,119 @@ const estudiantesAsistencia = {
     //6to de Primaria
     "16297336": { // ADUVIRI QUISPE SHARAI
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "4", atrasos: "", licencias: "", presentes: "5" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "14479026": { // ALVAREZ FLORES ALISON MAYA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15645677": { // CANTUTA HUANCA YADIEL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "1", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16789053": { // CONDORI AJAHUANA JHOSTIN
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17451940": { // ERGUETA AMARU MAIRYN ZULAMI
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17414278": { // FERNANDEZ CHOQUE ANYHELO MATEO
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16789847": { // FERNANDEZ FERNANDEZ MARY LUZ
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16883745": { // HUANCA QUISPE MAXIMILIANO
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "14047775": { // MAMANI USNAYO ALEJANDRO
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "1", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "14304209": { // ORELLANA SILVA ISABELLA ANABEL
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "14801125": { // PARICAHUA CASTILLO ANDREI GEMIO
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15333051": { // PAUCARA ERGUETA HAROL JHONNATAN
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "15960084": { // QUISPE VILA SERGIO ANDREW
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16220469": { // QUISPE FERNANDEZ NOEMI YESICA
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16166926": { // QUISPE QUISPE THIAGO ZHAIR
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "1", atrasos: "", licencias: "", presentes: "8" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "17184594": { // TERRAZAS RIOS CAMILA SHELLY
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "9" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
     },
     "16960822": { // VENEGAS FLORES MAGALI
         asistencia: [
-            { trimestre: "1er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
+            { trimestre: "1er Trim.", faltas: "3", atrasos: "", licencias: "", presentes: "6" },
             { trimestre: "2do Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" },
             { trimestre: "3er Trim.", faltas: "", atrasos: "", licencias: "", presentes: "" }
         ]
