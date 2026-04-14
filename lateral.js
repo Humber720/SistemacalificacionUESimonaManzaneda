@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ===============================
 function mostrarContenido(curso, e) {
 
+    const data = JSON.parse(localStorage.getItem("estudiante"));
     const titulo = document.getElementById('tituloCurso');
     const contenido = document.getElementById('infoCurso');
 
@@ -37,13 +38,45 @@ function mostrarContenido(curso, e) {
 
     if (e) e.target.classList.add("activo");
 
-    // RUTA PDF (IMPORTANTE)
+    // ===============================
+    // 🔒 VALIDAR ACCESO
+    // ===============================
+
+    const mapaCursos = {
+        "1ro de Primaria": "1roPrimaria",
+        "2do de Primaria": "2doPrimaria",
+        "3ro de Primaria": "3roPrimaria",
+        "4to de Primaria": "4toPrimaria",
+        "5to de Primaria": "5toPrimaria",
+        "6to de Primaria": "6toPrimaria"
+    };
+
+    const cursoEstudiante = mapaCursos[data?.curso];
+
+    // 👇 contenido libre
+    const contenidoLibre = ["himnos", "partituras"];
+
+    if (curso !== cursoEstudiante && !contenidoLibre.includes(curso)) {
+
+        titulo.textContent = "Acceso restringido";
+        contenido.innerHTML = `
+            <div style="padding:20px; text-align:center; color:#b30000;">
+                <h3>🚫 No tienes acceso a este curso</h3>
+                <p>Solo puedes ingresar a tu curso asignado:</p>
+                <strong>${data.curso}</strong>
+            </div>
+        `;
+        return;
+    }
+
+    // ===============================
+    // ✅ SI TIENE ACCESO
+    // ===============================
+
     const archivoPDF = `contenido/${curso}.pdf`;
 
-    // TITULO
     titulo.textContent = curso;
 
-    // CONTENIDO
     contenido.innerHTML = `
         <p>📚 Visualizando: <strong>${curso}</strong></p>
 
@@ -63,7 +96,7 @@ function cerrarSesion() {
 
     // 👇 marcar que cerró sesión
     sessionStorage.setItem("logout", "true");
-
+   // 👇 IMPORTANTE: replace (no permite volver atrás)
     window.location.replace("index.html");
 }
 
