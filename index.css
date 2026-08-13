@@ -102,6 +102,27 @@ input {
     width: 100%;
 }
 
+/* SELECTOR DE CURSO */
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+/* OPCIÓN INICIAL */
+select:invalid {
+    color: #777;
+}
+
+select option {
+    color: #333;
+}
+
 /* 👁 FIX REAL DEL OJITO */
 .input-container input[type="password"] {
     padding-right: 45px; /* espacio suficiente */
@@ -185,7 +206,8 @@ th {
         padding: 20px;
     }
 
-    input {
+        input,
+    select {
         font-size: 14px;
     }
 
