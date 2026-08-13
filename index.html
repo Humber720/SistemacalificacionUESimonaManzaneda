@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Educación Musical</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Index.css">
 </head>
 
 <body>
@@ -23,21 +23,23 @@
 
             <!-- MENSAJE INFORMATIVO -->
             <p class="info">
-                Ingrese su número de carnet en ambos campos
+                Seleccione su curso e ingrese su número de carnet
             </p>
 
             <form id="loginForm">
 
-                <!-- USUARIO = CI -->
-                <label for="username">Número de Carnet (Usuario)</label>
+                <!-- USUARIO = CURSO -->
+                <label for="curso">Curso (Usuario)</label>
                 <div class="input-container">
-                    <input 
-                        type="number" 
-                        id="username" 
-                        name="username" 
-                        placeholder="Ej: 1234567"
-                        required
-                    >
+                    <select id="curso" name="curso" required>
+                        <option value="">Seleccione su curso</option>
+                        <option value="1ro de Primaria">1ro de Primaria</option>
+                        <option value="2do de Primaria">2do de Primaria</option>
+                        <option value="3ro de Primaria">3ro de Primaria</option>
+                        <option value="4to de Primaria">4to de Primaria</option>
+                        <option value="5to de Primaria">5to de Primaria</option>
+                        <option value="6to de Primaria">6to de Primaria</option>
+                    </select>
                 </div>
 
                 <!-- CONTRASEÑA = CI -->
@@ -47,7 +49,7 @@
                         type="password" 
                         id="password" 
                         name="password" 
-                        placeholder="Repita su C.I."
+                        placeholder="Ej: 1234567"
                         required
                     >
 
