@@ -138,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
             limpiarInputs(); // limpia contraseña
             limpiarMensaje(); // limpia mensaje
 
-            const user = document.getElementById("username");
-            if (user) user.value = "";
+            const curso = document.getElementById("curso");
+            if (curso) curso.value = "";
         }
     });
     // LOGIN FORM
@@ -180,31 +180,58 @@ document.addEventListener("DOMContentLoaded", () => {
 // LOGIN
 // ===============================
 function login() {
-    const username = document.getElementById("username").value.trim();
+
+    const curso = document.getElementById("curso").value.trim();
     const password = document.getElementById("password").value.trim();
 
     limpiarMensaje();
 
-    if (!username || !password) return mostrarMensaje("Complete todos los campos", "red");
-    if (!/^[0-9]+$/.test(username)) return mostrarMensaje("Solo números en el CI", "red");
-    if (username !== password) return mostrarMensaje("El usuario y contraseña deben ser iguales", "red");
+    // VERIFICAR QUE SE HAYA SELECCIONADO CURSO
+    if (!curso) {
+        return mostrarMensaje("Seleccione su curso", "red");
+    }
 
-    const estudiante = estudiantes[username];
-    if (!estudiante) return mostrarMensaje("CI no registrado", "red");
+    // VERIFICAR QUE SE HAYA INGRESADO C.I.
+    if (!password) {
+        return mostrarMensaje("Ingrese su número de carnet", "red");
+    }
+
+    // VERIFICAR QUE EL C.I. SOLO TENGA NÚMEROS
+    if (!/^[0-9]+$/.test(password)) {
+        return mostrarMensaje("El C.I. debe contener solo números", "red");
+    }
+
+    // BUSCAR ESTUDIANTE POR C.I.
+    const estudiante = estudiantes[password];
+
+    if (!estudiante) {
+        return mostrarMensaje("CI no registrado", "red");
+    }
+
+    // VERIFICAR QUE EL CURSO SELECCIONADO SEA CORRECTO
+    if (estudiante.curso !== curso) {
+        return mostrarMensaje(
+            "El C.I. no corresponde al curso seleccionado",
+            "red"
+        );
+    }
 
     // GUARDAR DATOS EN LOCALSTORAGE
     const datos = {
-        ci: username,
+        ci: password,
         nombre: estudiante.nombre,
         apellido: estudiante.apellido,
         nombreCompleto: estudiante.nombre + " " + estudiante.apellido,
         curso: estudiante.curso
     };
+
     localStorage.setItem("estudiante", JSON.stringify(datos));
 
     mostrarMensaje("Ingreso correcto...", "green");
 
-    setTimeout(() => window.location.href = "menu.html", 800);
+    setTimeout(() => {
+        window.location.href = "menu.html";
+    }, 800);
 }
 
 // ===============================
@@ -263,8 +290,12 @@ function limpiarMensaje() {
 // LIMPIAR INPUTS
 // ===============================
 function limpiarInputs() {
+
     const password = document.getElementById("password");
     if (password) password.value = "";
+
+    const curso = document.getElementById("curso");
+    if (curso) curso.value = "";
 }
 
 // ===============================
